@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/imgRequestAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dfs_request_list_accept_reject_img" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/df_egg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/dfs_request_list_time_banner" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:src="@drawable/df_tree" />
+    </FrameLayout>
+
+    <com.ijoomer.customviews.IjoomerTextView
+        android:id="@+id/txtRestaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Royal Restaurant"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <com.ijoomer.customviews.IjoomerButton
+        android:id="@+id/btnRequestAccept"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <com.ijoomer.customviews.IjoomerButton
+        android:id="@+id/btnAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <com.ijoomer.customviews.IjoomerButton
+        android:background="@android:color/transparent"
+        android:id="@+id/btnProfile"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="5dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</FrameLayout>

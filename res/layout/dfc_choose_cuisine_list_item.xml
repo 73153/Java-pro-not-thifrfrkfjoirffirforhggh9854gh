@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.ijoomer.customviews.IjoomerCheckBox
+        android:id="@+id/chkCuisine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:button="@drawable/df_catagory_selector"
+        android:paddingLeft="15dip"
+        android:layout_margin="10dip"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:text="Panjabi"/>
+
+</LinearLayout>

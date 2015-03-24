@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/df_background_full" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/df_home_btn" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/df_back_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/df_order_banner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="45dp" >
+
+            <com.ijoomer.customviews.IjoomerTextView
+                android:id="@+id/txtRestaurantName"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Shanghai Chinese Restaurant"
+                android:textColor="@color/df_reward_detail_color"
+                android:textSize="16sp" />
+
+            <com.ijoomer.customviews.IjoomerTextView
+                android:id="@+id/txtDishName"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Sweet And Sour Chicken Noodles"
+                android:textColor="@color/df_reward_detail_color"
+                android:textSize="16sp" />
+
+            <com.ijoomer.customviews.IjoomerTextView
+                android:id="@+id/txtPrice"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="$6.80"
+                android:textColor="@color/df_reward_detail_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgPayWithCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/df_pay_with_card" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgPayWithCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/df_pay_with_cash" />
+    </LinearLayout>
+
+</FrameLayout>

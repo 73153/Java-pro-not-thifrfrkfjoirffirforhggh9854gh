@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/df_home_btn" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrAnimate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dfc_menu_banner" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/df_bird_left" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/df_bird_right" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/df_reward_detail"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <com.ijoomer.customviews.IjoomerButton
+                    android:id="@+id/txtHome"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="@string/df_menu_home"
+                    android:shadowColor="#333333"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:background="@android:color/transparent"
+                    android:textColor="@drawable/df_text_selector"
+                    android:textSize="24sp"
+                     />
+
+                <com.ijoomer.customviews.IjoomerButton
+                    android:id="@+id/txtResponses"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:shadowColor="#333333"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="@string/df_menu_responses"
+                    android:textColor="@drawable/df_text_selector"
+                    android:background="@android:color/transparent"
+                    android:textSize="24sp"
+                     />
+
+                <com.ijoomer.customviews.IjoomerButton
+                    android:id="@+id/txtOrders"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/df_menu_orders"
+                    android:shadowColor="#333333"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:background="@android:color/transparent"
+                    android:textColor="@drawable/df_text_selector"
+                    android:textSize="24sp"
+                    />
+
+                <com.ijoomer.customviews.IjoomerButton
+                    android:id="@+id/txtLoyalty"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/df_menu_loyalty"
+                    android:background="@android:color/transparent"
+                    android:textColor="@drawable/df_text_selector"
+                    android:textSize="24sp"
+                    android:visibility="gone"/>
+
+                <com.ijoomer.customviews.IjoomerButton
+                    android:id="@+id/txtProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/df_menu_profile"
+                    android:shadowColor="#333333"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:background="@android:color/transparent"
+                    android:textColor="@drawable/df_text_selector"
+                    android:textSize="24sp"
+                    />
+
+                <com.ijoomer.customviews.IjoomerButton
+                    android:id="@+id/txtSettings"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/df_menu_settings"
+                    android:shadowColor="#333333"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:background="@android:color/transparent"
+                    android:textColor="@drawable/df_text_selector"
+                    android:textSize="24sp"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

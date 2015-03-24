@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/df_background_full"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/df_app_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/df_register_box"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/df_register_banner" />
+
+        <com.ijoomer.customviews.IjoomerEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/df_register_editbox"
+            android:gravity="left|center_vertical"
+            android:hint="@string/df_email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <com.ijoomer.customviews.IjoomerEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/df_register_editbox"
+            android:gravity="left|center_vertical"
+            android:hint="@string/df_password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <com.ijoomer.customviews.IjoomerEditText
+            android:id="@+id/edtUserName"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/df_register_editbox"
+            android:gravity="left|center_vertical"
+            android:hint="@string/df_username"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <com.ijoomer.customviews.IjoomerEditText
+            android:id="@+id/edtMobileNo"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/df_register_editbox"
+            android:gravity="left|center_vertical"
+            android:hint="@string/df_mobile"
+            android:inputType="phone"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <com.ijoomer.customviews.IjoomerEditText
+            android:id="@+id/edtUserType"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/df_register_editbox"
+            android:focusable="false"
+            android:gravity="left|center_vertical"
+            android:hint="@string/df_usertype"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/spnRegistrationType"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.ijoomer.customviews.IjoomerButton
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/df_register_btn" />
+
+            <com.ijoomer.customviews.IjoomerButton
+                android:id="@+id/btnRegisterWithFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/df_register_with_facebook_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.ijoomer.customviews.IjoomerButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/df_register_back_btn" />
+
+</LinearLayout>

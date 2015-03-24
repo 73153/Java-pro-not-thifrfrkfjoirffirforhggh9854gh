@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/df_order_list_item_box"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.ijoomer.customviews.IjoomerTextView
+            android:id="@+id/txtDfcRestaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="Restaurant Name"
+            android:textColor="@color/category_bg_color"
+            android:textSize="18sp" />
+
+        <com.ijoomer.customviews.IjoomerTextView
+            android:id="@+id/txtDfcOrderDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="Order Date"
+            android:textColor="@color/category_bg_color"
+            android:textSize="18sp" />
+
+        <com.ijoomer.customviews.IjoomerTextView
+            android:id="@+id/txtDfcOrderAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="Amount"
+            android:textColor="@color/category_bg_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

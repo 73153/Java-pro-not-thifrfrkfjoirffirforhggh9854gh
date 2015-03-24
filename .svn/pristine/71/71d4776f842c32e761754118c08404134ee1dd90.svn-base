@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgRestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollAddressAbout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="@color/white"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lnrBusinessAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="60dp"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <com.ijoomer.customviews.IjoomerTextView
+                            android:id="@+id/txtRestaurantNameAbt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sanghai Noon Restaurant"
+                            android:textColor="#7ccccb"
+                            android:textSize="26sp" />
+
+                        <com.ijoomer.customviews.IjoomerButton
+                            android:id="@+id/imgLike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/df_like_btn" />
+
+                        <com.ijoomer.customviews.IjoomerTextView
+                            android:id="@+id/txtLikeCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="45"
+                            android:textColor="#333333"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <com.ijoomer.customviews.IjoomerTextView
+                        android:id="@+id/txtDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:scrollbars="none"
+                        android:text="Sanghai Noon Restaurant.Sanghai Noon Restaurant.Sanhai Noon RestaurantSanghai Noon Restaurant \nSanghai Noon RestaurantSanghai Noon RestaurantSanghai Noon RestaurantSanghai Noon RestaurantSanghai Noon RestaurantSanghai Noon RestaurantSanghai Noon RestaurantSanghai Noon Restaurant"
+                        android:textColor="#333333"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnrBusinessAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="60dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <com.ijoomer.customviews.IjoomerTextView
+                            android:id="@+id/txtRestaurantNameAddr"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sanghai Noon Restaurant"
+                            android:textColor="#7ccccb"
+                            android:textSize="26sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/df_like_btn"
+                            android:visibility="invisible" />
+
+                        <com.ijoomer.customviews.IjoomerTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="45"
+                            android:textSize="22sp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <com.ijoomer.customviews.IjoomerTextView
+                        android:id="@+id/txtAddress1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="123 the road"
+                        android:textColor="#333333"
+                        android:textSize="18sp" />
+
+                    <com.ijoomer.customviews.IjoomerTextView
+                        android:id="@+id/txtAddress2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="W1 4TH"
+                        android:textColor="#333333"
+                        android:textSize="18sp" />
+
+                    <com.ijoomer.customviews.IjoomerTextView
+                        android:id="@+id/txtCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="London"
+                        android:textColor="#333333"
+                        android:textSize="18sp" />
+
+                    <com.ijoomer.customviews.IjoomerTextView
+                        android:id="@+id/txtPhoneNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="+44 207 384 4763"
+                        android:textColor="#333333"
+                        android:textSize="18sp" />
+
+                    <com.ijoomer.customviews.IjoomerTextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="info@sanghairestaurant.com"
+                        android:textColor="#333333"
+                        android:textSize="18sp" />
+
+                    <com.ijoomer.customviews.IjoomerTextView
+                        android:id="@+id/txtWebsite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="www.sanghairestaurant.com"
+                        android:textColor="#333333"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lnrDish"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="@color/white"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lstDishes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:overScrollMode="never"
+                android:smoothScrollbar="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/df_home_btn" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/df_back_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp" >
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgAbout"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/df_business_about_selected_img" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgAddress"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/df_business_address_img" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgDishes"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/df_business_dish_img" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dfs_account_content_box"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.ijoomer.customviews.IjoomerTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/df_paypal_id"
+                android:textColor="@color/df_reward_detail_color"
+                android:textSize="22sp" />
+
+            <com.ijoomer.customviews.IjoomerTextView
+                android:id="@+id/txtPaypalId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="testemail@paypal.com"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/df_reward_detail_color"
+                android:textSize="22sp" />
+
+            <com.ijoomer.customviews.IjoomerEditText
+                android:id="@+id/edtNewPaypalId"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/dfs_account_editbox"
+                android:gravity="left|center_vertical"
+                android:hint="@string/df_new_id"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true" />
+
+            <com.ijoomer.customviews.IjoomerButton
+                android:id="@+id/imgSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/dfs_account_save_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgSummary"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dfs_account_summary_btn" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgMoney"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dfs_account_money_btn" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgPayment"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dfs_account_payment_btn" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/df_background_full"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imgAddPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/df_profile_change_photo_btn" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="@drawable/dfc_profile_details_address_bg"
+            android:gravity="center"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+            <com.ijoomer.customviews.IjoomerEditText
+                android:id="@+id/edtAddressLine1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/df_login_edittext"
+                android:gravity="left|center_vertical"
+                android:hint="@string/df_addressline1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true" />
+
+            <com.ijoomer.customviews.IjoomerEditText
+                android:id="@+id/edtAddressLine2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dfc_profile_address_edit_field_margin"
+                android:background="@drawable/df_login_edittext"
+                android:gravity="left|center_vertical"
+                android:hint="@string/df_addressline2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true" />
+
+            <com.ijoomer.customviews.IjoomerEditText
+                android:id="@+id/edtCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dfc_profile_address_edit_field_margin"
+                android:background="@drawable/df_login_edittext"
+                android:gravity="left|center_vertical"
+                android:hint="@string/df_city"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:singleLine="true" />
+
+            <com.ijoomer.customviews.IjoomerEditText
+                android:id="@+id/edtPostCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dfc_profile_address_edit_field_margin"
+                android:background="@drawable/df_login_edittext"
+                android:gravity="left|center_vertical"
+                android:hint="@string/df_post_code"
+                android:layout_weight="1"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true" />
+
+            <com.ijoomer.customviews.IjoomerButton
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dfc_profile_address_btnSave_margin"
+                android:background="@drawable/df_profile_save_btn" />
+        </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="5.35"
+        >
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="@drawable/df_profile_stats_btn" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="@drawable/df_profile_details_btn" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="@drawable/df_profile_adress_btn" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.65">
+
+            </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

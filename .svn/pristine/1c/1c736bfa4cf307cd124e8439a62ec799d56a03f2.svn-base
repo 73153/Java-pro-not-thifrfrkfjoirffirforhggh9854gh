@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/dfs_offer_list_item_box"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.ijoomer.customviews.IjoomerTextView
+        android:id="@+id/txtPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Person Name"
+        android:textColor="@color/category_bg_color"
+        android:textSize="18sp" />
+
+    <com.ijoomer.customviews.IjoomerTextView
+        android:id="@+id/txtOrderDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="12/03/2014 @ 12:30"
+        android:textColor="@color/category_bg_color"
+        android:textSize="18sp" />
+
+    <com.ijoomer.customviews.IjoomerTextView
+        android:id="@+id/txtOrderDishName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="Dish Name"
+        android:textColor="@color/category_bg_color"
+        android:textSize="18sp" />
+
+    <com.ijoomer.customviews.IjoomerTextView
+        android:id="@+id/txtOrderAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="5.70"
+        android:textColor="@color/category_bg_color"
+        android:textSize="18sp" />
+
+    <com.ijoomer.customviews.IjoomerButton
+        android:id="@+id/btnDeliveryRequired"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="Delivery required"
+        android:textColor="@color/df_add_tip_color"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" >
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/btnReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dfs_offer_list_reject_btn" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dfs_offer_list_call_btn" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dfs_offer_list_confirm_btn" />
+    </LinearLayout>
+
+</LinearLayout>

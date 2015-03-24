@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dfs_confirm_order_content_box"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical" >
+
+            <com.ijoomer.customviews.IjoomerCheckBox
+                android:id="@+id/chkCurrentLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:shadowColor="#333333"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:button="@drawable/df_catagory_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="My current location"
+                android:textColor="@drawable/df_text_selector"
+                android:textSize="26sp"
+                android:checked="false"
+                android:visibility="visible"/>
+
+            <com.ijoomer.customviews.IjoomerCheckBox
+                android:id="@+id/chkHomeAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#333333"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:button="@drawable/df_catagory_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="My home address"
+                android:textColor="@drawable/df_text_selector"
+                android:textSize="26sp"
+                android:checked="false"
+                android:visibility="visible"/>
+
+            <com.ijoomer.customviews.IjoomerEditText
+                android:id="@+id/edtAddress"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dfs_confirm_order_message_box"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:hint="@string/df_delivery_address"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                >
+
+                <com.ijoomer.customviews.IjoomerButton
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/df_dialog_btn"
+                    android:gravity="center"
+                    android:text="@string/ok"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textSize="18sp" />
+                <com.ijoomer.customviews.IjoomerButton
+                    android:id="@+id/btnCancel"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/df_dialog_btn"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

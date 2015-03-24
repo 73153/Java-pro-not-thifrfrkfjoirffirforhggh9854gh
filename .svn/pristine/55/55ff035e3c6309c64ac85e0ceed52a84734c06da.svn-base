@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/imgRequestAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/dfs_request_list_accept_reject_img" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/imgRequestListen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/dfs_request_list_listen_tag" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/txtRequestAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="@string/df_accept"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/txtRequestReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="35dp"
+            android:gravity="center"
+            android:text="@string/df_reject"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/txtTimeAdded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
+            android:text="Added 15:12"
+            android:paddingBottom="10dp"
+            android:textColor="@color/category_bg_color"
+            android:textSize="20sp"
+            android:background="@drawable/dfs_request_list_time_banner" />
+
+
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/txtCallUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:text="@string/df_call_user"
+            android:paddingBottom="10dp"
+            android:textColor="@color/category_bg_color"
+            android:textSize="20sp"
+            android:background="@drawable/dfs_request_list_caller_user_btn"/>
+
+        <com.ijoomer.customviews.IjoomerButton
+            android:id="@+id/btnFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right|"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/dfs_flag"/>
+    </FrameLayout>
+
+</LinearLayout>

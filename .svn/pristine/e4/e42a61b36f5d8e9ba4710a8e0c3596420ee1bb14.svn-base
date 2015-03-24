@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dfc_profile_address_edit_field_width">180dp</dimen>
+    <dimen name="dfc_profile_address_btnSave_margin">30dp</dimen>
+    <dimen name="dfc_profile_address_edit_field_margin">10dp</dimen>
+    <dimen name="dfc_profile_address_edit_field_margin_big">30dp</dimen>
+    <dimen name="dfc_profile_address_tab_margin">112dp</dimen>
+
+    <dimen name="dfc_profile_details_edit_field_width">180dp</dimen>
+    <dimen name="dfc_profile_details_btnSave_margin">30dp</dimen>
+    <dimen name="dfc_profile_details_edit_field_margin">10dp</dimen>
+    <dimen name="dfc_profile_details_edit_field_margin_big">30dp</dimen>
+    <dimen name="dfc_profile_details_tab_margin">112dp</dimen>
+
+    <dimen name="dfc_profile_stats_tab_margin">112dp</dimen>
+    <dimen name="dfc_profile_stats_dish_banner_margin">40dp</dimen>
+    <dimen name="dfc_profile_stats_dish_banner_padding">25dp</dimen>
+    <dimen name="dfc_profile_stats_fav_cuisine_margin">50dp</dimen>
+    <dimen name="dfc_profile_stats_fav_cuisine_name_margin">35dp</dimen>
+    <dimen name="dfc_profile_stats_top_dishes_margin">30dp</dimen>
+    <dimen name="dfc_profile_stats_top_dishes_layout_margin">10dp</dimen>
+    <dimen name="dfc_profile_stats_top_dishes_padding">1dp</dimen>
+    <dimen name="dfc_profile_stats_top_dishes_orderd_width">180dp</dimen>
+
+</resources>

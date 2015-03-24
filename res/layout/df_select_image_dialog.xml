@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dfs_dish_picture_box"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.ijoomer.customviews.IjoomerButton
+                android:id="@+id/imgTakePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dfs_dish_take_photo_btn" />
+
+            <com.ijoomer.customviews.IjoomerButton
+                android:id="@+id/imgUploadPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dfs_dish_upload_photo_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

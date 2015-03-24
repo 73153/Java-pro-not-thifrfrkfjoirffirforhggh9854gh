@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="facebook_app_id">341753222659533</string>-->
+    <string name="facebook_app_id">326003274229595</string>
+    <string name="domain_name">http://matiz.websitewelcome.com/~tasolglo/dev/difflow/</string>
+    <string name="twitter_consumer_key">ACGuGZRQI4rASvX4uHgDw</string>
+    <string name="twitter_secret_key">n2zv5dXGbvav3FCb63sk3rIYH8zz74is69dUkINlsgg</string>
+    <string name="date_format">yyyy-MM-dd</string>
+    <string name="date_time_format">yyyy-MM-dd kk:mm:ss</string>
+    <string name="time_format">kk:mm:ss</string>
+    <string name="upload_multiple_photos">true</string>
+    <string name="debug_on">true</string>
+    <string name="font_name_with_path">fonts/harangton.ttf</string>
+    <string name="is_cache_enable">true</string>
+    <string name="gcm_id">598957934305</string>
+    <string name="tabbar_without_caption">false</string>
+    <string name="tabbar_without_image">false</string>
+    <string name="map_api_key">AIzaSyAK-7vvX6jKNCxap94QamsgTaJoFYCdwgY</string>
+    <string name="show_youtube_video_title">true</string>
+    <string name="show_youtube_video_description">true</string>
+    <string name="show_youtube_video_views">true</string>
+    <string name="show_url_set_dialog">false</string>
+    <string name="http_access_allow">false</string>
+    <string name="login_required_from_background">false</string>
+
+</resources>
